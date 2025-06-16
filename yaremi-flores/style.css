@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-print-color-adjust: exact;
+}
+.main-container {
+     max-width: 8.5in;
+     min-height: 11in;
+     margin: auto;
+}
+
+/* New style for the skills tags */
+.skill-tag {
+    @apply bg-slate-700 text-sm text-sky-200 font-medium px-3 py-1 rounded-full;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .main-container {
+        box-shadow: none;
+        margin: 0;
+        border: none;
+    }
+}

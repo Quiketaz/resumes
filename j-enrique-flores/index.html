@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Jesus Enrique Flores Sotelo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensure layout uses modern CSS (Flexbox) for ATS compliance */
+        .split-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Optimize Print Margins & Fix Awkward Page Breaks */
+        @media print {
+            @page {
+                margin: 0.4in;
+            }
+            .section, .job, ul {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            .print-controls {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="print-controls">
+        <button type="button" onclick="window.print()">Export to PDF</button>
+    </div>
+    <main class="resume-container">
+        <header>
+            <div class="header-grid">
+                <div class="header-left">
+                    <h1>Jesus Enrique Flores Sotelo (MCP)</h1>
+                    <p class="title">Manager, Solution Development &amp; Cloud Solution Architect</p>
+                </div>
+                <div class="header-right">
+                    <p>Katy, TX</p>
+                    <p>+1 (832) 674 5401</p>
+                    <p>flores.enrique@gmail.com</p>
+                    <p>linkedin.com/in/enriquefloressotelo</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p>Microsoft-certified Solution Architect with 20+ years of experience delivering scalable CRM systems and leading enterprise D365 CE deployments. Proven track record coordinating stakeholders and engineering teams to align dependencies and environment readiness. Expert in performing configuration diagnostics and ensuring launches meet strict UAT standards to eliminate downstream system impact.</p>
+        </section>
+
+        <section class="section">
+            <h2>Professional Experience</h2>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>Avanade, Inc.</h3>
+                    <p>Houston, TX</p>
+                </div>
+                <div>
+                    <p class="job-role">Manager, Solution Development</p>
+                    <p class="job-date">Dec 2024 – Present</p>
+                    <ul>
+                        <li><strong>Enterprise Architecture &amp; Design:</strong> Led the end-to-end design of a scalable PDF Generation Engine integrating Dynamics 365 (Dataverse), AWS Lambda, iHub, and SharePoint, standardizing event-driven patterns.</li>
+                        <li><strong>Cross-Platform Integration:</strong> Orchestrated secure system communication across Azure and AWS environments, resolving complex authentication protocols and driving pipeline validation from MVP through production.</li>
+                        <li><strong>Release Management &amp; QA:</strong> Directed Release 1 deployments across DEV and QA environments, ensuring strict ALM consistency, environment readiness, and document accuracy.</li>
+                        <li><strong>Stakeholder Coordination:</strong> Acted as primary technical liaison across D365, AWS, and QA workstreams to resolve integration blockers, alongside producing executive-level roadmaps.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>Avanade, Inc.</h3>
+                    <p>Houston, TX</p>
+                </div>
+                <div>
+                    <p class="job-role">Senior Consultant, CRM Solution Dev</p>
+                    <p class="job-date">July 2019 – Dec 2024</p>
+                    <ul>
+                        <li><strong>Global Enablement:</strong> Orchestrated 200+ technical workshops globally, successfully training end-users and support teams to maximize D365 CE and Power Platform adoption.</li>
+                        <li><strong>Enterprise App Architecture:</strong> Led the system design, configuration, and custom API integration of PowerApps solutions serving an enterprise user base of 50k+ endpoints for a multi-national Oil &amp; Gas client.</li>
+                        <li><strong>Secure Portal Implementation:</strong> Architected and deployed a secure stakeholder partner portal utilizing Dataverse tables, Power Pages, and canvas PowerApps for a U.S. Government Health Department.</li>
+                        <li><strong>Production Risk Mitigation:</strong> Directed structured deployment sequencing and dependency risk analysis across complex, multi-tiered production environments.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>Accenture</h3>
+                    <p>Monterrey, Mexico</p>
+                </div>
+                <div>
+                    <p class="job-role">Application Development Associate Manager | Specialist | Sr. Analyst</p>
+                    <p class="job-date">April 2015 – June 2019</p>
+                    <ul>
+                        <li><strong>Enterprise CRM Delivery:</strong> Led the implementation of a CRM system for a large federal agency to process applications and provide the backbone for a multi-billion dollar loan program.</li>
+                        <li><strong>Service Delivery Management:</strong> Conducted project management, status reporting, and budget tracking for major enterprise scopes of work while managing applications according to strict SLAs.</li>
+                        <li><strong>System Architecture &amp; Engineering:</strong> Designed complex system specifications, coded applications to functional programming standards, and gathered user requirements across the full Service Delivery Lifecycle.</li>
+                        <li><strong>Multi-Team Leadership:</strong> Supervised diverse development tracks, overseeing code reviews, technical solution design, environment provisioning, and automated CI/CD pipeline integration.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>Early Career &amp; Foundational Software Engineering</h2>
+            <p>Progressed through foundational web, mobile, and software engineering roles, establishing deep expertise in .NET, C#, and database architecture before strategically pivoting to enterprise Microsoft Dynamics CRM solutions.</p>
+            <div class="split-list">
+                <div>
+                    <h4>Senior Consultant &amp; Developer roles</h4>
+                    <p class="small-note">Deintec, Intelexion, Grupo Staff | 2011 – 2015</p>
+                </div>
+                <div>
+                    <h4>Software &amp; Mobile Developer roles</h4>
+                    <p class="small-note">Epicor, Komodo Technologies, ITESM | 2002 – 2011</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Certifications</h2>
+            <ul class="certification-list">
+                <li><strong>Power Platform:</strong> PL-600, PL-400, PL-200, PL-100, PL-900</li>
+                <li><strong>Dynamics 365:</strong> MB-200, MB-210, MB2-715, MB2-716</li>
+                <li><strong>Cloud Infrastructure:</strong> AZ-900 (Azure Fundamentals)</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

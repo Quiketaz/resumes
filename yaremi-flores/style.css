@@ -1,6 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
 .main-container {
      max-width: 8.5in;
@@ -10,7 +11,12 @@ body {
 
 /* New style for the skills tags */
 .skill-tag {
-    @apply bg-slate-700 text-sm text-sky-200 font-medium px-3 py-1 rounded-full;
+    background-color: #334155; /* Tailwind bg-slate-700 */
+    font-size: 0.875rem;       /* Tailwind text-sm */
+    color: #38bdf8;            /* Tailwind text-sky-200 */
+    font-weight: 500;          /* Tailwind font-medium */
+    padding: 0.25rem 0.75rem;  /* Tailwind px-3 py-1 */
+    border-radius: 9999px;     /* Tailwind rounded-full */
 }
 
 @media print {

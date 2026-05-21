@@ -14,15 +14,52 @@
 
         /* Optimize Print Margins & Fix Awkward Page Breaks */
         @media print {
-            @page {
-                margin: 0.4in;
-            }
-            .section, .job, ul {
-                page-break-inside: avoid;
-                break-inside: avoid;
-            }
             .print-controls {
                 display: none;
+            }
+
+            /* Shrink outer page margins */
+            @page { margin: 0.3in; }
+            
+            /* Condense base text */
+            body {
+                font-size: 10pt !important;
+                line-height: 1.15 !important;
+            }
+
+            /* Eliminate wasted space in the Header */
+            header, .header, .contact-info {
+                margin-bottom: 5px !important;
+                padding-bottom: 0 !important;
+            }
+            h1 {
+                font-size: 18pt !important;
+                margin-top: 0 !important;
+                margin-bottom: 2px !important;
+            }
+
+            /* Tighten section titles and divider lines */
+            h2 {
+                font-size: 11pt !important;
+                margin-top: 8px !important;
+                margin-bottom: 4px !important;
+                padding-bottom: 2px !important;
+            }
+
+            /* Compress bullet points */
+            ul {
+                margin-top: 2px !important;
+                margin-bottom: 6px !important;
+                padding-left: 18px !important;
+            }
+            li {
+                margin-bottom: 2px !important;
+            }
+
+            /* Prevent awkward page breaks */
+            section, article, .job, ul {
+                page-break-inside: avoid;
+                break-inside: avoid;
             }
         }
     </style>
